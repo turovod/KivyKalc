@@ -86,8 +86,10 @@ Screen:
                 id: content_drawer
 '''
 
+
 class Tab(MDFloatLayout, MDTabsBase):
     pass
+
 
 class ContentNavigationDrawer(BoxLayout):
     pass
@@ -134,7 +136,6 @@ class MortgageCalculatorApp(MDApp):
             self.root.ids.tabs.add_widget(
                 Tab(text=f"[ref={name_tab}][font={fonts[-1]['fn_regular']}]{md_icons[icon_name]}[/font][/ref] {name_tab}")
             )
-
 
 
 MortgageCalculatorApp().run()
